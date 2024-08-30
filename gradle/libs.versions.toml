@@ -1,26 +1,159 @@
 [versions]
-agp = "8.5.0"
-kotlin = "1.9.0"
+# +----------------------------------------------- +
+# LIBS                                             |
+# +----------------------------------------------- +
+agp = "8.5.2"
+kotlin = "1.9.22"
 coreKtx = "1.13.1"
-junit = "4.13.2"
-junitVersion = "1.2.1"
-espressoCore = "3.6.1"
 appcompat = "1.7.0"
 material = "1.12.0"
 activity = "1.9.1"
 constraintlayout = "2.1.4"
+legacySupportV4 = "1.0.0"
+
+# +----------------------------------------------- +
+# MATERIAL COMPONENTS                              |
+# +----------------------------------------------- +
+volley = "1.2.1"
+gson = "2.10.1"
+
+# +----------------------------------------------- +
+# CODELAB APP SETTINGS                             |
+# +----------------------------------------------- +
+preferenceKtx = "1.2.1"
+
+# +----------------------------------------------- +
+# WORKMANAGER                                      |
+# +----------------------------------------------- +
+workRuntimeKtx = "2.9.1"
+glide = "4.15.1"
+lifecycleExtensions = "2.2.0"
+
+# +----------------------------------------------- +
+# VIEWPAGER                                        |
+# +----------------------------------------------- +
+viewpager2 = "1.1.0"
+
+# +----------------------------------------------- +
+# NAVIGATION                                       |
+# +----------------------------------------------- +
+navigationFragmentKtx = "2.7.7"
+navigationUiKtx = "2.7.7"
+
+# +----------------------------------------------- +
+# COROUTINES                                       |
+# +----------------------------------------------- +
+kotlinxCoroutinesAndroid = "1.7.3"
+kotlinxCoroutinesCore = "1.6.4"
+
+# +----------------------------------------------- +
+# DEPURAÇÃO                                        |
+# +----------------------------------------------- +
+timber = "4.7.1"
+
+# +----------------------------------------------- +
+# LIFECYCLE                                        |
+# +----------------------------------------------- +
+lifecycleViewmodelKtx = "2.8.4"
+
+# +----------------------------------------------- +
+# ROOM                                             |
+# +----------------------------------------------- +
+roomRuntime = "2.6.1"
+sqliteJdbc = "3.34.0"
+
+# +----------------------------------------------- +
+# KSP                                              |
+# +----------------------------------------------- +
+ksp = "1.9.23-1.0.20"
+
+# +----------------------------------------------- +
+# TESTS                                            |
+# +----------------------------------------------- +
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+
 
 [libraries]
+# +----------------------------------------------- +
+# LIBS                                             |
+# +----------------------------------------------- +
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-legacy-support-v4 = { module = "androidx.legacy:legacy-support-v4", version.ref = "legacySupportV4" }
+
+# +----------------------------------------------- +
+# MATERIAL COMPONENTS                              |
+# +----------------------------------------------- +
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+# +----------------------------------------------- +
+# CODELAB APP SETTINGS                             |
+# +----------------------------------------------- +
+androidx-preference-ktx = { module = "androidx.preference:preference-ktx", version.ref = "preferenceKtx" }
+
+# +----------------------------------------------- +
+# WORKMANAGER                                      |
+# +----------------------------------------------- +
+androidx-work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workRuntimeKtx" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+androidx-lifecycle-extensions = { module = "androidx.lifecycle:lifecycle-extensions", version.ref = "lifecycleExtensions" }
+
+# +----------------------------------------------- +
+# VIEWPAGER                                        |
+# +----------------------------------------------- +
+androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+
+# +----------------------------------------------- +
+# NAVIGATION                                       |
+# +----------------------------------------------- +
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationFragmentKtx" }
+androidx-navigation-dynamic-features-fragment = { module = "androidx.navigation:navigation-dynamic-features-fragment", version.ref = "navigationFragmentKtx" }
+
+# +----------------------------------------------- +
+# COROUTINES                                       |
+# +----------------------------------------------- +
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCore" }
+
+# +----------------------------------------------- +
+# DEPURAÇÃO                                        |
+# +----------------------------------------------- +
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
+
+# +----------------------------------------------- +
+# LIFECYCLE                                        |
+# +----------------------------------------------- +
+androidx-lifecycle-common-java8 = { module = "androidx.lifecycle:lifecycle-common-java8", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+
+# +----------------------------------------------- +
+# ROOM                                             |
+# +----------------------------------------------- +
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+sqlite-jdbc = { module = "org.xerial:sqlite-jdbc", version.ref = "sqliteJdbc" }
+
+# +----------------------------------------------- +
+# TESTS                                            |
+# +----------------------------------------------- +
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp"}
+
 
